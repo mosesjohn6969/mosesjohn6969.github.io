@@ -89,10 +89,10 @@ h2::before{
 }
 
 .box:hover {
-    -webkit-transform:rotate(-7deg);
-    -moz-transform:rotate(-7deg);
-    -o-transform:rotate(-7deg);
-    transform:rotate(-7deg);
+    -webkit-transform:rotate(-1deg);
+    -moz-transform:rotate(-1deg);
+    -o-transform:rotate(-1deg);
+    transform:rotate(-1deg);
     margin: auto 0;
 }
 .box1:hover {
@@ -156,6 +156,8 @@ a{
         width: 100%;
     }
 }
+
+
 
 
 /*COVER*/
