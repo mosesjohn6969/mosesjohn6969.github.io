@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgt@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: "Poppins", sans-serif;
+}
+
+
+    
+
+
+
+body{
+    display:all; ;
+    justify-content : center;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto 0;
+    background: #F8F9FA;
+}
+
+h2{
+    position: relative;
+    font-size: 3.9vw;
+   
+    -webkit-text-stroke: 0.4vw #C5C1C1;
+    text-transform: uppercase;
+}
+h2::before{
+    content:attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #ff7a18;
+    -webkit-text-stroke: 0vw #000000;
+    border-right: 5px solid #000000;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+
+}
+
+@keyframes animate
+{
+   0%,10%,100%
+   {
+       width: 0;
+   }
+   70%,90%
+   {
+       width: 100%;
+   }
+
+}
+
+
+}
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone1 {
+    cursor:pointer;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    margin: auto 0;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+.section-heading {
+    
+}
+
+.box:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    transform:rotate(-7deg);
+    margin: auto 0;
+}
+.box1:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    transform:rotate(-7deg);
+    margin: auto 0;
+}
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    /*background: #440026; /* Old browsers */
+    /*background: -moz-linear-gradient(top, #fdc500 0%, #fdc500 100%);*/ /* FF3.6+ */
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdc500), color-stop(100%,#a5c956)); *//* Chrome,Safari4+ */
+    /*background: -webkit-linear-gradient(top, #fdc500 0%,#fdc500 100%);*/ /* Chrome10+,Safari5.1+ */
+    /*background: -o-linear-gradient(top, #ffd500 0%,#ffd500 100%);*/ /* Opera 11.10+ */
+    /*background: -ms-linear-gradient(top, #fdc500 0%,#fdc500 100%);*/ /* IE10+ */
+    /*background: linear-gradient(top, #fdc500 0%,#fdc500 100%);*/ /* W3C */*/
+    /*margin: auto 0;*/
+}
+
+/*NAV*/
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    padding: 10px;
+
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li{
+    padding-left: 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (max-width: 800px ){
+    .main-nav{
+        font-size: 0.5em;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 600px ){
+    .main-nav{
+        font-size: 0.3em;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 500px ){
+    .cover{
+        
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+
+/*COVER*/
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding-top: 10%;*/
+    margin: auto 0;
+
+}
+.cover {
+    width: 100%;
+    
+   
+    padding-top:  auto;
+}
+/*GRID*/
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.box > img{
+    width: 100%;
+    width: 100%;
+}
+.box{
+    background-color: #444;
+    padding: 130px;
+    margin: 15px;
+}
+
+.box1{
+    background-color: #FFFFFF;
+    padding: 130px;
+    margin: 15px;
+}
+.logo{
+    margin-right: auto;
+}
+.push{
+    margin-left: auto;
+}
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+     
+    content: "";
+    background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+    height: 80vh;
+
+    margin: auto 0;
+    width: 100%;
+   
+}
+@media only screen and (max-width: 620px ){
+    .red{
+        
+        
+        width: 100%;
+    }
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: linear-gradient(130deg,#c4c0c0,#c4c0c0 41.07%,#c4c0c0 76.05%);
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: linear-gradient(130deg,#c4c0c0,#c4c0c0 41.07%,#c4c0c0 76.05%);
+    margin: auto 0;
+}
+
+
+
+
+
+
+.content.max-1100 {
+    max-width: 1100px;
+}
+@media (max-width: 900px)
+.content {
+    padding: 0 20px;
+}
+@media (max-width: 1100px)
+.content {
+    padding: 0 40px;
+}
+@media (max-width: 1230px)
+.content {
+    padding: 0 60px;
+}
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    margin-top: 70px;
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+element.style {
+    visibility: visible;
+    animation-delay: 0.4s;
+    animation-name: fadeIn;
+}
+
+
+
+.grid-item img {
+    display: block;
+    margin: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+element.style {
+    visibility: visible;
+    animation-delay: 0.4s;
+    animation-name: fadeIn;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+}
+.content.max-1100 {
+    max-width: 1100px;
+}
+@media (max-width: 900px)
+.content {
+    padding: 0 20px;
+}
+@media (max-width: 1100px)
+.content {
+    padding: 0 40px;
+}
+@media (max-width: 1230px)
+.content {
+    padding: 0 60px;
+}
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+.tech-used {
+    position: relative;
+    padding: 100px 0px;
+    background-image: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+element.style {
+    visibility: visible;
+    animation-delay: 0.4s;
+    animation-name: fadeIn;
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.grid-item {
+    z-index: 20;
+    padding: 20px;
+    height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10%;
+    -webkit-box-shadow: 0 0 4px 0 #acacac88;
+    box-shadow: 0 0 4px 0 #acacac88;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+.grid-container {
+    margin-top: 70px;
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
+
+element.style {
+}
+.content.max-1100 {
+    max-width: 1100px;
+}
+@media (max-width: 900px)
+.content {
+    padding: 0 20px;
+}
+@media (max-width: 1100px)
+.content {
+    padding: 0 40px;
+}
+@media (max-width: 1230px)
+.content {
+    padding: 0 60px;
+}
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
